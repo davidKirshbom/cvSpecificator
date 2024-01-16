@@ -1,0 +1,17 @@
+{{ define "education_block" }} {{$education := .Education}} {{$title :=
+.SectionTitle}}
+<div class="section">
+  <h5 class="main-info_title">{{- $title -}}</h5>
+
+  {{- range $education -}}
+  <div class="section-item">
+    <div class="years-container">{{- print .StartYear "-" .EndYear -}}</div>
+    <div>
+      <em>{{- .SchoolName -}}</em> | <em>{{- .Location -}}</em>
+      <div class="job-title">{{- .DegreeTitle -}}</div>
+      <p>{{- Htmlize .Learned -}}</p>
+    </div>
+    {{- end -}}
+  </div>
+</div>
+{{ end}}

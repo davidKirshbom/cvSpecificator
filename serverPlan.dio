@@ -1,0 +1,28 @@
+<mxfile host="65bd71144e">
+    <diagram id="zrrja0V_SOLwY5r8Osbb" name="Page-1">
+        <mxGraphModel dx="521" dy="419" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" value="merge&lt;br&gt;&amp;nbsp;experience from db&lt;br&gt;&amp;amp;&lt;br&gt;job data from user" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="210" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="smart experience&lt;br&gt;&amp;amp;&lt;br&gt;other user data" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="225" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="chatGpt" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="220" width="100" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="genarte pdf" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="220" width="100" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="create template" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="145" y="65" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="visit template and screenshoot" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="285" y="65" width="190" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

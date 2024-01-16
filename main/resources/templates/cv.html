@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/css/cv.css" />
+
+    <meta charset="UTF-8" />
+    <title>{{- print .FirstName " " .LastName " CV" -}}</title>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="direct-info">
+        <h5 class="direct-info_title">Contact</h5>
+        <p class="direct-info_text">
+          <strong> phone:</strong>
+          <br />
+          {{- .Phone -}}
+        </p>
+        <p class="direct-info_text">
+          <strong> Email:</strong>
+          <br />
+          {{- .Email -}}
+        </p>
+        <p class="direct-info_text">
+          <strong> Address:</strong>
+          <br />
+          {{- .Address -}}
+        </p>
+
+        <h5 class="direct-info_title">Skills</h5>
+        <ul class="direct-info_bullet_list">
+          {{- range .Skills -}}
+          <li>{{- . -}}</li>
+          {{- end -}}
+        </ul>
+        <h5 class="direct-info_title">Languages</h5>
+        <ul class="direct-info_bullet_list">
+          {{- range .Languages -}}
+          <li>{{- . -}}</li>
+          {{- end -}}
+        </ul>
+        <p class="direct-info_text">
+          <strong>{{- .Link.Label -}}</strong>
+
+          <a href="{{- .Link.Url -}}">{{- .Link.Url -}}</a>
+        </p>
+        <img
+          src="data:image/png;base64,{{ .Link.QR }}"
+          alt="{{- .Link.Label -}}"
+        />
+      </div>
+
+      <div class="main-info">
+        <div class="main-info_header">
+          <h1 class="title">{{ Titleize .FirstName .LastName }}</h1>
+          <h2 class="subtitle">{{- .Title -}}</h2>
+          <p>{{- .About -}}</p>
+        </div>
+        <div class="main-info_body">
+          {{ template "experience_block" WithComData "Experience"
+          .OptimizeExperience "SectionTitle" "Experience" "Skills" .Skills }} {{
+          template "education_block" WithComData "Education" .Education
+          "SectionTitle" "Education" }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

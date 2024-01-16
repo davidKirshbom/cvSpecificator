@@ -1,0 +1,17 @@
+{{ define "experience_block" }} {{$experience := .Experience}} {{$title :=
+.SectionTitle}} {{$skills := .Skills}}
+<div class="section">
+  <h5 class="main-info_title">{{- $title -}}</h5>
+
+  {{- range $experience -}}
+  <div class="section-item">
+    <div class="years-container">{{- print .StartYear "-" .EndYear -}}</div>
+    <div>
+      <em>{{- .CompanyName -}}</em> | <em>{{- .Location -}}</em>
+      <div class="job-title">{{- .Role.Title -}}</div>
+      <p>{{- HtmlEmphasisWords .Role.Explain $skills -}}</p>
+    </div>
+  </div>
+  {{- end -}}
+</div>
+{{ end}}
